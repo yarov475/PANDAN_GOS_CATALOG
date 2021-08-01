@@ -4,20 +4,164 @@
     <meta charset="UTF-8">
     <title>Эрмитаж</title>
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        .img {
+            height: 100%;
+        }
+
+        .card img {
+            width: 100%;
+            height: 450px;
+        }
+
+    </style>
 </head>
 <body>
-img
-yandex map
-the best
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="cabinet.html">Коллекци</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Дом</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cabinet.html">Кабинет</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="museums_list.html">МУЗЕИ</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                       data-bs-toggle="dropdown" aria-expanded="false">
+                        Мультимедиа
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="video.html">Видео</a></li>
+                        <li><a class="dropdown-item" href="audio.html">Аудио</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="interactive.html">Интерактив</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+</nav>
 
-инетресный факт
+<div class="row container">
+    <div class="col-md-6">
+        <div class="yandex_map">
+            <h2> Эрмитаж на карте</h2>
+            <div style="position:relative;overflow:hidden;"><a
+                    href="https://yandex.ru/maps/2/saint-petersburg/search/%D0%B1%D0%BE%D0%BB%D1%8C%D1%88%D0%BE%D0%B9%20%D1%8D%D1%80%D0%BC%D0%B8%D1%82%D0%B0%D0%B6/?utm_medium=mapframe&utm_source=maps"
+                    style="color:#eee;font-size:12px;position:absolute;top:0px;">большой эрмитаж в Санкт‑Петербурге</a><a
+                    href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps"
+                    style="color:#eee;font-size:12px;position:absolute;top:14px;">Санкт‑Петербург</a>
+                <iframe src="https://yandex.ru/map-widget/v1/-/CCUiuXUwlA" width="560" height="400" frameborder="1"
+                        allowfullscreen="true" style="position:relative;"></iframe>
+            </div>
+        </div>
+    </div>
+   <div class="col-md-6"> <div class="text">
+       <div class="img"><img src="./images/hermitage.jpg" alt="эрмитаж"></div>
+ <h3 class="text-danger">    Режим работы Эрмитажа — лето 2021</h3>
+           Музей открыт для посетителей, но с многочисленными ограничениями:
 
-случайный экспонат
-популярные экспонаты
-вам понарвиться
-выставки
-интерактивныйе экскурсии
+       Сеансы начинаются каждые полчаса. По средам, пятницам и субботам с 11:00 до 18:00. По вторникам, четвергам и воскресеньям с 11:00 до 17:00 (указано время начала сеансов). Рекомендуется прибывать ко входу за 15 минут до начала.
+       Максимальное время пребывания 2 часа. Сразу весь музей посмотреть не получится. Можно двигаться только по трём разработанным маршрутам: два непосредственно по Эрмитажу, третий — по выставочным залам в здании Главного штаба где находится коллекция импрессионистов и постимпрессионистов.
+      </div>    </div>
+
+</div>
+
+
+<h2>Интерактивная экскурсия</h2>
+<iframe width="100%" height="415"
+        src="https://artsandculture.google.com/streetview/the-state-hermitage-museum/nwF27ZaYflRsWA?sv_lng=30.31492387295399&sv_lat=59.94086192408578&sv_h=182.9991437108598&sv_p=8.231055316739287&sv_pid=juOMPsD8pZjguxqRwkqCRw&sv_z=0.794579616747642"
+        frameborder="0"></iframe>
+
+
+<div class="container text-center">
+    <h2> самые популярные:</h2>
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Эрмитаж</h5>
+                    <img class="card-img-top" src="./images/exp1pg.jpg" alt="">
+                    <p class="card-text">знаменитый эрмитаж.</p>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Эрмитаж</h5>
+                    <img class="card-img-top" src="./images/e2.jpg" alt="">
+                    <p class="card-text">знаменитый эрмитаж.</p>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Эрмитаж</h5>
+                    <img class="card-img-top" src="./images/e3.jpg" alt="">
+                    <p class="card-text">знаменитый эрмитаж.</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="container">
+    <h2> инетресный факт</h2>
+    <p> Эрмитаж возник в 1764 году как частное собрание Екатерины II, после того, как ей были переданы из Берлина 317
+        ценных картин (по расхожим слухам их было лишь 225) общей стоимостью в 183 тысячи талеров из частной коллекции
+        живописи Иоганна Эрнеста Гоцковского (Johann Ernst Gotzkowsky, 1710—1775), в счёт его долга, возникшего из-за
+        неудачной попытки поставки зерна в русскую армию, при участии князя Владимира Сергеевича Долгорукова[8]. Среди
+        них были полотна таких мастеров, как Дирк ван Бабюрен, Хендрик ван Бален, Рембрандт ван Рейн, Питер Пауль
+        Рубенс, Якоб Йорданс, Антонис ван Дейк, Хендрик Гольциус, Франс Хальс, Ян Стен, Геррит ван Хонтхорст и другие
+        произведения, в основном голландско-фламандской школы первой половины XVII века. Эти полотна стали основой, на
+        которой сформировался музей. Из 317 картин, переданных в Россию в 1764 году, сегодня в Эрмитаже хранится по
+        меньшей мере 96 полотен[9]. Поначалу большинство картин размещалось в уединённых апартаментах дворца (ныне Малый
+        Эрмитаж). Впоследствии апартаменты получили название «Эрмитаж».</p>
+</section>
+
+<section class="container text-center">
+    <h2>Случайный экспонат</h2>
+    <p><img src="./images/e4.jpg" alt=""></p>
+    <p>Смерть короля Кандавла (итал. La morte di re Candaule), 1757, ди Джамбаттиста Питтони (Giovanni Battista
+        Pittoni), 161×210 см</p>
+</section>
+<section class="container text-center">
+    <h2>Вам может понарвиться</h2>
+    <p><img src="./images/e5.jpg" alt=""></p>
+    <p>«Донна Нуда» — одна из дюжины леонардесков, которые в XVIII—XIX вв. приобретались для Эрмитажа как произведения
+        Леонардо да Винчи</p>
+</section>
+
+<div class="section container text-center"
+">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/a93HwWjM-no" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+</div>
+
 расписание
 ссылка на музей
 
