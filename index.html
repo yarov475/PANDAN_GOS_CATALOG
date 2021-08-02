@@ -17,7 +17,7 @@
 -->
 
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="Introducing Lollipop, a sweet new take on Android.">
@@ -25,241 +25,244 @@
     <title>ГОСКАТАЛОГ</title>
 
     <!-- Page styles -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.min.css">
     <link rel="stylesheet" href="CSS/styles.css">
     <style>
-    #view-source {
-      position: fixed;
-      display: block;
-      right: 0;
-      bottom: 0;
-      margin-right: 40px;
-      margin-bottom: 40px;
-      z-index: 900;
-    }
+        #view-source {
+            position: fixed;
+            display: block;
+            right: 0;
+            bottom: 0;
+            margin-right: 40px;
+            margin-bottom: 40px;
+            z-index: 900;
+        }
     </style>
-  </head>
-  <body>
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+</head>
+<body>
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
 
-      <div class="android-header mdl-layout__header mdl-layout__header--waterfall">
+    <div class="android-header mdl-layout__header mdl-layout__header--waterfall">
         <div class="mdl-layout__header-row">
           <span class="android-title mdl-layout-title">
           ГК
           </span>
-          <!-- Add spacer, to align navigation to the right in desktop -->
-          <div class="android-header-spacer mdl-layout-spacer"></div>
-          <div class="android-search-box mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right mdl-textfield--full-width">
-            <label class="mdl-button mdl-js-button mdl-button--icon" for="search-field">
-              <i class="material-icons">search</i>
-            </label>
-            <div class="mdl-textfield__expandable-holder">
-              <input class="mdl-textfield__input" type="text" id="search-field">
+            <!-- Add spacer, to align navigation to the right in desktop -->
+            <div class="android-header-spacer mdl-layout-spacer"></div>
+            <div class="android-search-box mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right mdl-textfield--full-width">
+                <label class="mdl-button mdl-js-button mdl-button--icon" for="search-field">
+                    <i class="material-icons">search</i>
+                </label>
+                <div class="mdl-textfield__expandable-holder">
+                    <input onclick="document.location='search.html'" class="mdl-textfield__input" type="text" id="search-field">
+                </div>
             </div>
-          </div>
-          <!-- Navigation -->
-          <div class="android-navigation-container">
-            <nav class="android-navigation mdl-navigation">
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="multimedia.html">МУЛЬТИМЕДИА</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">ПРОФЕССИОНАЛАМ</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="museums_list.html">МУЗЕИ</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="cabinet.html">КОЛЛЕКЦИЯ</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="login.html">ЛОГИН</a>
-                <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">ПОДПИСКА</a>
-            </nav>
-          </div>
-          <span class="android-mobile-title mdl-layout-title">
-            <img class="android-logo-image" src="images/android-logo.png">
-          </span>
-          <button class="android-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" id="more-button">
+            <!-- Navigation -->
+            <div class="android-navigation-container">
+                <nav class="android-navigation mdl-navigation">
+                    <a class="mdl-navigation__link mdl-typography--text-uppercase"
+                       href="multimedia.html">МУЛЬТИМЕДИА</a>
+                    <a class="mdl-navigation__link mdl-typography--text-uppercase" href="profi.html">ПРОФЕССИОНАЛАМ</a>
+                    <a class="mdl-navigation__link mdl-typography--text-uppercase" href="museums_list.html">МУЗЕИ</a>
+                    <a class="mdl-navigation__link mdl-typography--text-uppercase" href="cabinet.html">КОЛЛЕКЦИЯ</a>
+                    <a class="mdl-navigation__link mdl-typography--text-uppercase" href="login.html">ЛОГИН</a>
+                     </nav>
+            </div>
+            <button  class=" android-more-button mdl-button mdl-js-button         mdl-button--icon mdl-js-ripple-effect   " id="more-button" >
             <i class="material-icons">more_vert</i>
-          </button>
-          <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect" for="more-button">
-            <li class="mdl-menu__item"><a href="exp_search.html"></a> Расширенный поиск</li>
-            <li class="mdl-menu__item"><a href="cabinet.html"></a>Поиск в коллекции</li>
-              <li class="mdl-menu__item"><a href="museums_list.html"></a>поиск  музея</li>
+            </button>
+            <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect" for="more-button">
+                <li class="mdl-menu__item"><a href="advanced_search.html">Расширенный поиск</a> </li>
+                <li class="mdl-menu__item"><a href="cabinet.html">Поиск в коллекции</a></li>
+                <li class="mdl-menu__item"><a href="museums_list.html">поиск музея</a></li>
 
-          </ul>
+            </ul>
         </div>
-      </div>
+    </div>
 
-      <div class="android-drawer mdl-layout__drawer">
+    <div class="android-drawer mdl-layout__drawer">
         <span class="mdl-layout-title">
-          <img class="android-logo-image" src="images/android-logo-white.png">
+          <img class="android-logo-image" src="images/e4.jpg">
         </span>
         <nav class="mdl-navigation">
-          <a class="mdl-navigation__link" href="">ПОИСК</a>
-          <a class="mdl-navigation__link" href="">РАСШИРЕННЫЙ ПОИСК</a>
-          <a class="mdl-navigation__link" href="">МУЛЬТИМЕДИА</a>
-          <a class="mdl-navigation__link" href="">ПРОФЕССИОНАЛАМ</a>
-          <a class="mdl-navigation__link" href="">DEVELOPERS</a>
-          <a class="mdl-navigation__link" href="">КОЛЛЕКЦИЯ</a>
-          <a class="mdl-navigation__link" href="">ЛОГИН</a>
-          <div class="android-drawer-separator"></div>
-          <span class="mdl-navigation__link" href="">ПОДПИСКА</span>
-          <a class="mdl-navigation__link" href="">Lollipop 5.0</a>
-          <a class="mdl-navigation__link" href="">KitKat 4.4</a>
-          <a class="mdl-navigation__link" href="">Jelly Bean 4.3</a>
-          <a class="mdl-navigation__link" href="">Android history</a>
-          <div class="android-drawer-separator"></div>
-          <span class="mdl-navigation__link" href="">Resources</span>
-          <a class="mdl-navigation__link" href="">Official blog</a>
-          <a class="mdl-navigation__link" href="">Android on Google+</a>
-          <a class="mdl-navigation__link" href="">Android on Twitter</a>
-          <div class="android-drawer-separator"></div>
-          <span class="mdl-navigation__link" href="">For developers</span>
-          <a class="mdl-navigation__link" href="">App developer resources</a>
-          <a class="mdl-navigation__link" href="">Android Open Source Project</a>
-          <a class="mdl-navigation__link" href="">Android SDK</a>
+            <a class="mdl-navigation__link" href="search.html">ПОИСК</a>
+            <a class="mdl-navigation__link" href="advanced_search.html">РАСШИРЕННЫЙ ПОИСК</a>
+            <a class="mdl-navigation__link" href="multimedia.html">МУЛЬТИМЕДИА</a>
+            <a class="mdl-navigation__link" href="profi.html">ПРОФЕССИОНАЛАМ</a>
+            <a class="mdl-navigation__link" href="dev.html">DEVELOPERS</a>
+            <a class="mdl-navigation__link" href="cabinet.html">КОЛЛЕКЦИЯ</a>
+            <a class="mdl-navigation__link" href="login.html">ЛОГИН</a>
+            <div class="android-drawer-separator"></div>
+            <span class="mdl-navigation__link" href="cabinet.html">ПОДПИСКА</span>
+            <a class="mdl-navigation__link" href="">Lollipop 5.0</a>
+            <a class="mdl-navigation__link" href="">KitKat 4.4</a>
+            <a class="mdl-navigation__link" href="">Jelly Bean 4.3</a>
+            <a class="mdl-navigation__link" href="">Android history</a>
+            <div class="android-drawer-separator"></div>
+            <span class="mdl-navigation__link" href="">Resources</span>
+            <a class="mdl-navigation__link" href="">Official blog</a>
+            <a class="mdl-navigation__link" href="">Android on Google+</a>
+            <a class="mdl-navigation__link" href="">Android on Twitter</a>
+            <div class="android-drawer-separator"></div>
+            <span class="mdl-navigation__link" href="">For developers</span>
+            <a class="mdl-navigation__link" href="">App developer resources</a>
+            <a class="mdl-navigation__link" href="">Android Open Source Project</a>
+            <a class="mdl-navigation__link" href="">Android SDK</a>
         </nav>
-      </div>
+    </div>
 
-      <div class="android-content mdl-layout__content">
+    <div class="android-content mdl-layout__content">
         <a name="top"></a>
         <div class="android-be-together-section mdl-typography--text-center">
-          <div class="logo-font android-slogan">Коллекции</div>
-          <div class="logo-font android-sub-slogan">Российских музеев.</div>
-          <div class="logo-font android-create-character">
-            <a href="">случайный шедевр</a>
-          </div>
+            <div class="logo-font android-slogan">Коллекции</div>
+            <div class="logo-font android-sub-slogan">Российских музеев.</div>
+            <div class="logo-font android-create-character">
+                <a href="item.html">случайный шедевр</a>
+            </div>
 
-          <a href="#screens">
-            <button class="android-fab mdl-button mdl-button--colored mdl-js-button mdl-button--fab mdl-js-ripple-effect">
-              <i class="material-icons">expand_more</i>
-            </button>
-          </a>
+            <a href="#screens">
+                <button class="android-fab mdl-button mdl-button--colored mdl-js-button mdl-button--fab mdl-js-ripple-effect">
+                    <i class="material-icons">expand_more</i>
+                </button>
+            </a>
         </div>
         <div class="android-screen-section mdl-typography--text-center">
-          <a name="screens"></a>
-          <div class="mdl-typography--display-1-color-contrast">КАТЕГОРИИ</div>
-          <div class="android-screens">
-            <div class="android-wear android-screen">
-              <a class="android-image-link" href="">
-                <img class="android-screen-image" src="images/">
-                <img class="android-screen-image" src="images/">
-              </a>
-              <a class="android-link mdl-typography--font-regular mdl-typography--text-uppercase" href="">ЖИВОПИСЬ</a>
-            </div>
-            <div class="android-phone android-screen">
-              <a class="android-image-link" href="">
-                <img class="android-screen-image" src="images/nexus6-on.jpg">
-              </a>
-              <a class="android-link mdl-typography--font-regular mdl-typography--text-uppercase" href="">ГРАФИКА</a>
-            </div>
-            <div class="android-tablet android-screen">
-              <a class="android-image-link" href="">
-                <img class="android-screen-image" src="images/nexus9-on.jpg">
-              </a>
-              <a class="android-link mdl-typography--font-regular mdl-typography--text-uppercase" href="">СКУЛЬПТУРА</a>
-            </div>
-            <div class="android-tv android-screen">
-              <a class="android-image-link" href="">
-                <img class="android-screen-image" src="images/tv-on.jpg">
-              </a>
-              <a class="android-link mdl-typography--font-regular mdl-typography--text-uppercase" href="">ДОКУМЕНТЫ</a>
-            </div>
-            <div class="android-auto android-screen">
-              <a class="android-image-link" href="">
-                <img class="android-screen-image" src="images/auto-on.jpg">
-              </a>
-              <a class="android-link mdl-typography--font-regular mdl-typography--text-uppercase mdl-typography--text-left" href="">КНИГИ</a>
-            </div>
+            <a name="screens"></a>
+            <div class="mdl-typography--display-1-color-contrast">КАТЕГОРИИ</div>
+            <div class="android-screens">
+                <div class="android-wear android-screen">
+                    <a class="android-image-link" href="">
+                        <img class="android-screen-image" src="images/e2.jpg">
+                        <img class="android-screen-image" src="images/e5.jpg">
+                    </a>
+                    <a class="android-link mdl-typography--font-regular mdl-typography--text-uppercase"
+                       href="">ЖИВОПИСЬ</a>
+                </div>
+                <div class="android-phone android-screen">
+                    <a class="android-image-link" href="">
+                        <img class="android-screen-image" src="images/exp1pg.jpg">
+                    </a>
+                    <a class="android-link mdl-typography--font-regular mdl-typography--text-uppercase"
+                       href="">ГРАФИКА</a>
+                </div>
+                <div class="android-tablet android-screen">
+                    <a class="android-image-link" href="">
+                        <img class="android-screen-image" src="images/e4jpg.jpg">
+                    </a>
+                    <a class="android-link mdl-typography--font-regular mdl-typography--text-uppercase" href="">СКУЛЬПТУРА</a>
+                </div>
+                <div class="android-tv android-screen">
+                    <a class="android-image-link" href="">
+                        <img class="android-screen-image" src="images/e4jpg.jpg">
+                    </a>
+                    <a class="android-link mdl-typography--font-regular mdl-typography--text-uppercase" href="">ДОКУМЕНТЫ</a>
+                </div>
+                <div class="android-auto android-screen">
+                    <a class="android-image-link" href="">
+                        <img class="android-screen-image" src="images/e4.jpg">
+                    </a>
+                    <a class="android-link mdl-typography--font-regular mdl-typography--text-uppercase mdl-typography--text-left"
+                       href="">КНИГИ</a>
+                </div>
 
-          </div>
-            <a href="">БОЛЬШЕ КАТЕГОРИЙ</a>
+            </div>
+            <a href="categories_list.html">БОЛЬШЕ КАТЕГОРИЙ</a>
         </div>
-          <div class="android-more-section">
-              <div class="android-section-title mdl-typography--display-1-color-contrast">МУЗЕИ</div>
-              <div class="android-card-container mdl-grid">
-                  <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
-                      <div class="mdl-card__media">
-                          <img src="images/more-from-1.png">
-                      </div>
-                      <div class="mdl-card__title">
-                          <h4 class="mdl-card__title-text">ЭРМИТАЖ</h4>
-                      </div>
-                      <div class="mdl-card__supporting-text">
-                          <span class="mdl-typography--font-light mdl-typography--subhead">Крупнейший музей Санкт-Петербурга</span>
-                      </div>
-                      <div class="mdl-card__actions">
-                          <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="museum.html">
-                              Экспозиция
-                              <i class="material-icons">chevron_right</i>
-                          </a>
-                      </div>
-                  </div>
+        <div class="android-more-section">
+            <div class="android-section-title mdl-typography--display-1-color-contrast">МУЗЕИ</div>
+            <div class="android-card-container mdl-grid">
+                <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+                    <div class="mdl-card__media">
+                        <img src="images/exp1pg.jpg">
+                    </div>
+                    <div class="mdl-card__title">
+                        <h4 class="mdl-card__title-text">ЭРМИТАЖ</h4>
+                    </div>
+                    <div class="mdl-card__supporting-text">
+                        <span class="mdl-typography--font-light mdl-typography--subhead">Крупнейший музей Санкт-Петербурга</span>
+                    </div>
+                    <div class="mdl-card__actions">
+                        <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase"
+                           href="museum.html">
+                            Экспозиция
+                            <i class="material-icons">chevron_right</i>
+                        </a>
+                    </div>
+                </div>
 
-                  <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
-                      <div class="mdl-card__media">
-                          <img src="images/more-from-4.png">
-                      </div>
-                      <div class="mdl-card__title">
-                          <h4 class="mdl-card__title-text">Русский Музей</h4>
-                      </div>
-                      <div class="mdl-card__supporting-text">
-                          <span class="mdl-typography--font-light mdl-typography--subhead">Музей, посвященный русской культуре</span>
-                      </div>
-                      <div class="mdl-card__actions">
-                          <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="museum.html">
-                          Экспозиция
-                              <i class="material-icons">chevron_right</i>
-                          </a>
-                      </div>
-                  </div>
+                <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+                    <div class="mdl-card__media">
+                        <img src="images/exp1pg.jpg">
+                    </div>
+                    <div class="mdl-card__title">
+                        <h4 class="mdl-card__title-text">Русский Музей</h4>
+                    </div>
+                    <div class="mdl-card__supporting-text">
+                        <span class="mdl-typography--font-light mdl-typography--subhead">Музей, посвященный русской культуре</span>
+                    </div>
+                    <div class="mdl-card__actions">
+                        <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase"
+                           href="museum.html">
+                            Экспозиция
+                            <i class="material-icons">chevron_right</i>
+                        </a>
+                    </div>
+                </div>
 
-                  <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
-                      <div class="mdl-card__media">
-                          <img src="images/more-from-2.png">
-                      </div>
-                      <div class="mdl-card__title">
-                          <h4 class="mdl-card__title-text">Музей-квартира достоевского</h4>
-                      </div>
-                      <div class="mdl-card__supporting-text">
-                          <span class="mdl-typography--font-light mdl-typography--subhead">Музей, посвященный великому классику</span>
-                      </div>
-                      <div class="mdl-card__actions">
-                          <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
-                             Экспозиция
-                              <i class="material-icons">chevron_right</i>
-                          </a>
-                      </div>
-                  </div>
+                <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+                    <div class="mdl-card__media">
+                        <img src="images/e2.jpg">
+                    </div>
+                    <div class="mdl-card__title">
+                        <h4 class="mdl-card__title-text">Музей-квартира достоевского</h4>
+                    </div>
+                    <div class="mdl-card__supporting-text">
+                        <span class="mdl-typography--font-light mdl-typography--subhead">Музей, посвященный великому классику</span>
+                    </div>
+                    <div class="mdl-card__actions">
+                        <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="museum.html">
+                            Экспозиция
+                            <i class="material-icons">chevron_right</i>
+                        </a>
+                    </div>
+                </div>
 
-                  <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
-                      <div class="mdl-card__media">
-                          <img src="images/more-from-3.png">
-                      </div>
-                      <div class="mdl-card__title">
-                          <h4 class="mdl-card__title-text">Музей Рериха</h4>
-                      </div>
-                      <div class="mdl-card__supporting-text">
-                          <span class="mdl-typography--font-light mdl-typography--subhead">Частный музей почитателей художника</span>
-                      </div>
-                      <div class="mdl-card__actions">
-                          <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
+                <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+                    <div class="mdl-card__media">
+                        <img src="images/e3.jpg">
+                    </div>
+                    <div class="mdl-card__title">
+                        <h4 class="mdl-card__title-text">Музей Рериха</h4>
+                    </div>
+                    <div class="mdl-card__supporting-text">
+                        <span class="mdl-typography--font-light mdl-typography--subhead">Частный музей почитателей художника</span>
+                    </div>
+                    <div class="mdl-card__actions">
+                        <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="museum.html">
                             экспозиция
-                              <i class="material-icons">chevron_right</i>
-                          </a>
-                      </div>
-                  </div>
-              </div>
-          </div>
-        <div class="android-wear-section">
-          <div class="android-wear-band">
-            <div class="android-wear-band-text">
-              <div class="mdl-typography--display-2 mdl-typography--font-thin">Приложение</div>
-              <p class="mdl-typography--headline mdl-typography--font-thin">
-            Скачайте приложение
-              </p>
-              <p>
-                <a class="mdl-typography--font-regular mdl-typography--text-uppercase android-alt-link" href="">
-               Aple Store и  Play Store&nbsp;<i class="material-icons">chevron_right</i>
-                </a>
-              </p>
+                            <i class="material-icons">chevron_right</i>
+                        </a>
+                    </div>
+                </div>
             </div>
-          </div>
+        </div>
+        <div class="android-wear-section">
+            <div class="android-wear-band">
+                <div class="android-wear-band-text">
+                    <div class="mdl-typography--display-2 mdl-typography--font-thin">Приложение</div>
+                    <p class="mdl-typography--headline mdl-typography--font-thin">
+                        Скачайте приложение
+                    </p>
+                    <p>
+                        <a class="mdl-typography--font-regular mdl-typography--text-uppercase android-alt-link" href="interactive.html">
+                           Займитесь искусством&nbsp;<i class="material-icons">chevron_right</i>
+                        </a>
+                    </p>
+                </div>
+            </div>
         </div>
         <div class="android-customized-section">
             <section>
@@ -268,84 +271,72 @@
             </section>
             <section>
                 <p class="mdl-typography--font-light">
-                  Интересное
+                    Интересное
             </section>
             <section>
                 <p class="mdl-typography--font-light">
-                 Рекомендации
+                    Рекомендации
             </section>
             <section>
                 <p class="mdl-typography--font-light">
-                Умный поиск
+                    Умный поиск
             </section>
             <section>
                 <p class="mdl-typography--font-light">
-                  игры
+                    игры
             </section>
 
-          <div class="android-customized-section-text">
-            <div class="mdl-typography--font-light mdl-typography--display-1-color-contrast">Customised by you, for you</div>
-            <p class="mdl-typography--font-light">
-              Put the stuff that you care about right on your home screen: the latest news, the weather or a stream of your recent photos.
-              <br>
-              <a href="" class="android-link mdl-typography--font-light">Customise your phone</a>
-            </p>
-          </div>
-          <div class="android-customized-section-image"></div>
+            <div class="android-customized-section-text">
+                <div class="mdl-typography--font-light mdl-typography--display-1-color-contrast">База культурного наследия
+                </div>
+                <p class="mdl-typography--font-light">
+                 Для ученых
+                    <br>
+                    <a href="" class="android-link mdl-typography--font-light">и любителей</a>
+                </p>
+            </div>
+            <div class="android-customized-section-image"></div>
         </div>
 
 
         <footer class="android-footer mdl-mega-footer">
-          <div class="mdl-mega-footer--top-section">
-            <div class="mdl-mega-footer--left-section">
-              <button class="mdl-mega-footer--social-btn"></button>
-              &nbsp;
-              <button class="mdl-mega-footer--social-btn"></button>
-              &nbsp;
-              <button class="mdl-mega-footer--social-btn"></button>
+            <div class="mdl-mega-footer--top-section">
+                <div class="mdl-mega-footer--left-section">
+                    <button class="mdl-mega-footer--social-btn">INST</button>
+                    &nbsp;
+                    <button class="mdl-mega-footer--social-btn">VK</button>
+                    &nbsp;
+                    <button class="mdl-mega-footer--social-btn">FB</button>
+                </div>
+                <div class="mdl-mega-footer--right-section">
+                    <a class="mdl-typography--font-light" href="#top">
+               наверх
+                        <i class="material-icons">expand_less</i>
+                    </a>
+                </div>
             </div>
-            <div class="mdl-mega-footer--right-section">
-              <a class="mdl-typography--font-light" href="#top">
-                Back to Top
-                <i class="material-icons">expand_less</i>
-              </a>
+
+            <div class="mdl-mega-footer--middle-section">
+                <p class="mdl-typography--font-light">ГОСКАТАЛОГ</p>
+                <p class="mdl-typography--font-light">OPEN DATA</p>
             </div>
-          </div>
 
-          <div class="mdl-mega-footer--middle-section">
-            <p class="mdl-typography--font-light">Satellite imagery: © 2014 Astrium, DigitalGlobe</p>
-            <p class="mdl-typography--font-light">Some features and devices may not be available in all areas</p>
-          </div>
+            <div class="mdl-mega-footer--bottom-section">
+                <a class="android-link android-link-menu mdl-typography--font-light" id="version-dropdown">
+                  похожие проекты
+                    <i class="material-icons">arrow_drop_up</i>
+                </a>
 
-          <div class="mdl-mega-footer--bottom-section">
-            <a class="android-link android-link-menu mdl-typography--font-light" id="version-dropdown">
-              Versions
-              <i class="material-icons">arrow_drop_up</i>
-            </a>
-            <ul class="mdl-menu mdl-js-menu mdl-menu--top-left mdl-js-ripple-effect" for="version-dropdown">
-              <li class="mdl-menu__item">5.0 Lollipop</li>
-              <li class="mdl-menu__item">4.4 KitKat</li>
-              <li class="mdl-menu__item">4.3 Jelly Bean</li>
-              <li class="mdl-menu__item">Android History</li>
-            </ul>
-            <a class="android-link android-link-menu mdl-typography--font-light" id="developers-dropdown">
-              For Developers
-              <i class="material-icons">arrow_drop_up</i>
-            </a>
-            <ul class="mdl-menu mdl-js-menu mdl-menu--top-left mdl-js-ripple-effect" for="developers-dropdown">
-              <li class="mdl-menu__item">App developer resources</li>
-              <li class="mdl-menu__item">Android Open Source Project</li>
-              <li class="mdl-menu__item">Android SDK</li>
-              <li class="mdl-menu__item">Android for Work</li>
-            </ul>
-            <a class="android-link mdl-typography--font-light" href="">Blog</a>
-            <a class="android-link mdl-typography--font-light" href="">Privacy Policy</a>
-          </div>
+                <a class="android-link mdl-typography--font-light" href="">Блог</a>
+                <a class="android-link mdl-typography--font-light" href="">Документы</a>
+            </div>
 
         </footer>
-      </div>
     </div>
-    <a href="https://github.com/google/material-design-lite/blob/mdl-1.x/templates/android-dot-com/" target="_blank" id="view-source" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast">View Source</a>
-    <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-  </body>
+</div>
+<a href="https://github.com/google/material-design-lite/blob/mdl-1.x/templates/android-dot-com/" target="_blank"
+   id="view-source"
+   class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast">API</a>
+<script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+</body>
 </html>

@@ -6,12 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <title>Авторизация</title>
+    <title>VIDEO</title>
 </head>
-<body class="container">
+<body>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
         <a class="navbar-brand" href="cabinet.html">Коллекци</a>
@@ -48,33 +47,25 @@
         </div>
     </div>
 </nav>
-<h1>Авторизация</h1>
-<p>после авторизации вы сможете:</p>
-<ol>
-    <li>Оставлять заявку на поиск</li>
-    <li>Сохранять результаты запроса в личном кабинете</li>
-    <li>Создавать свою галерею</li>
-    <li>Следить за новинками</li>
-    <li>Следить за новостями</li>
-</ol>
-<div class="form">
-    <form>
-        <label for="">Ваше имя</label>
-        <input type="text" class="form-control">
+<h1>Профессионалам</h1>
+<ul>
+    <li>Легкая версия сайта</li>
+    <li>Составить запрос <input type="text"></li>
+    <li>Предложить статью.  <form enctype="multipart/form-data" method="post">
+        <p><input type="file" name="f">
+            <input type="submit" value="Отправить"></p>
+    </form> </li>
+    <li>Предложить экспонат <form enctype="multipart/form-data" method="post">
+        <p><input type="file" name="f">
+            <input type="submit" value="Отправить"></p>
+    </form> </li>
+    </ul>
 
-        <label for="">Ваша почта</label>
-        <input type='email' class="form-control">
-        <label for="">Ваш пароль</label>
-        <input type='password' class="form-control">
-    </form>
-    <button type="submit" class="btn btn-info">Регистрация</button>
-</div>
+<iframe width="100%" height='600px' src="https://opendata.mkrf.ru/item/api" frameborder="0"></iframe>
 <!-- Optional JavaScript; choose one of the two! -->
 
 <!-- Option 1: Bootstrap Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
 <!-- Option 2: Separate Popper and Bootstrap JS -->
 <!--
@@ -83,5 +74,3 @@
 -->
 </body>
 </html>
-
-

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Графика</title>
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Расширенный поиск</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="cabinet.html">Коллекция</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Дом</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cabinet.html">Кабинет</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="museums_list.html">МУЗЕИ</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                       data-bs-toggle="dropdown" aria-expanded="false">
+                        Мультимедиа
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="video.html">Видео</a></li>
+                        <li><a class="dropdown-item" href="audio.html">Аудио</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="interactive.html">Интерактив</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <form action="search.html" class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+</nav>
+<div class="container text-center">
+    <h1>Живопись</h1>
+    <form action="search.html">
+        <div class="item">
+
+            <ol>
+                <li>
+                    <div class="">
+                        <label for="pet-select">Выберете страну происхождения </label>
+                        <select>
+                            <option value="Дерево">Россия</option>
+                            <option value="Кость">Франция</option>
+                            <option value="Железо">Германия</option>
+                            <option value="goldfish">...</option>
+                        </select>
+                    </div>
+                    <div class="">
+                        <label for="pet-select">Выберете век </label>
+                        <select>
+                            <option value="Дерево">15</option>
+                            <option value="Кость">16</option>
+                            <option value="Железо">17</option>
+                            <option value="Бетон">18</option>
+                            <option value="Стекло">19</option>
+                            <option value="goldfish">...</option>
+                        </select>
+                    </div>
+                </li>
+                <li>
+                    <div class="">
+                        <label for="tentacles">Выберете год (0-99):</label>
+
+                        <input type="number" id="tentacles" name="tentacles"
+                               min="0" max="99">
+                    </div>
+                </li>
+                <li>
+                    <div class="">
+                        <label for="pet-select">Выберете эпоху </label>
+                        <p>На фоне какого исторического события была создана вещь?</p>
+                        <select>
+                            <option value="Дерево">Петр 1</option>
+                            <option value="Кость">Екатерина великая</option>
+                            <option value="Железо">Первая мировая</option>
+                            <option value="Бетон">Вторая мировая</option>
+                            <option value="Стекло">НТР</option>
+                            <option value="goldfish">...</option>
+                        </select>
+                    </div>
+                </li>
+                <li>
+                    <div class="">
+                        <label for="pet-select">Выберете музей </label>
+                        <select>
+                            <option value="Дерево">Эрмитаж</option>
+                            <option value="Кость">Русский</option>
+                            <option value="Железо">...</option>
+                        </select>
+
+                    </div>
+                    <div class="">
+                        Выберете период:
+                        <label for="start">Начало:</label>
+                        <input type="date" id="start" name="trip-start"
+                               value="2018-07-22"
+                               min="2018-01-01" max="2018-12-31"><label for="start">конец периода</label>
+
+                        <input type="date" id="end" name="trip-end"
+                               value="2018-07-22"
+                               min="2018-01-01" max="2018-12-31">
+                    </div>
+                </li>
+                <li>
+                    <div class="">
+                        <label for="pet-select">Выберете материал: </label>
+                        <select id="material">
+                            <option value="Дерево">Дерево</option>
+                            <option value="Кость">Кость</option>
+                            <option value="Железо">Железо</option>
+                            <option value="Бетон">Бетон</option>
+                            <option value="Стекло">Стекло</option>
+                            <option value="goldfish">Ткань</option>
+                        </select>
+                    </div>
+                </li>
+                <li>
+                    <div class="">
+                        <label for="pet-select">Выберете технику изготовления </label>
+                        <select id="pet-select">
+                            <option value="Дерево">офорт</option>
+                            <option value="Кость">карандаш</option>
+                            <option value="Железо">Железо</option>
+                            <option value="Бетон">Бетон</option>
+                            <option value="Стекло">Стекло</option>
+                            <option value="goldfish">...</option>
+                        </select>
+                </li>
+                <li>
+        </div>
+        <div class="">
+            <label for="pet-select">Выберете размер объекта </label>
+            <select id="pet-select">
+                <option value="Дерево">большой</option>
+                <option value="Кость">маленький</option>
+                <option value="Железо">Железо</option>
+                <option value="Бетон">Бетон</option>
+                <option value="Стекло">Стекло</option>
+                <option value="goldfish">...</option>
+            </select>
+        </div>
+        </li>
+        <li>
+            <div class="">
+                <label for="pet-select">Опишите объект для умного поиска </label>
+                <input type="text">
+            </div>
+        </li>
+        <li>
+            <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+                формат выводв
+                <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+                <label class="btn btn-outline-primary" for="btncheck1">Для печати</label>
+
+                <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+                <label class="btn btn-outline-primary" for="btncheck2">с изображением</label>
+
+                <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
+                <label class="btn btn-outline-primary" for="btncheck3">без изображения</label>
+
+                <input type="checkbox" class="btn-check" id="btncheck4" autocomplete="off">
+                <label class="btn btn-outline-primary" for="btncheck4">txt</label>
+
+                <input type="checkbox" class="btn-check" id="btncheck5" autocomplete="off">
+                <label class="btn btn-outline-primary" for="btncheck5">pdf</label>
+
+                <input type="checkbox" class="btn-check" id="btncheck6" autocomplete="off">
+                <label class="btn btn-outline-primary" for="btncheck6">аудио</label>
+                <input type="checkbox" class="btn-check" id="btncheck7" autocomplete="off">
+                <label class="btn btn-outline-primary" for="btncheck7">видео</label>
+            </div>
+        </li>
+        <li><label for="">какие слова могут быть в описании</label>
+            <input type="text"></li>
+        <li><label for="">какие словоcочетания могут быть в описании</label>
+            <input type="text"></li>
+        <li><label for="">какие слова  НЕ могут быть в описании</label>
+            <input type="text"></li>
+        <li><label for="">какие словосочетания НЕ могут быть в описании</label>
+            <input type="text"></li>
+        <li><label for="">какие цифры  могут быть в описании</label>
+            <input type="text"></li>
+        <li><label for="">какие цифры НЕ  могут быть в описании</label>
+            <input type="text"></li>
+        <li><label for="">какие языки могут использоватьсяя  в описании</label>
+            <input type="text"></li>
+        <li><label for="">какие языки НЕ  могут использоватьсяя в описании</label>
+            <input type="text"></li>
+        </ol>
+        <li><label for="">какого размера монета</label>
+            <input type="text"></li>
+        <li><label for="">Материал - носитель</label>
+            <input type="text"></li>
+        <li><label for="">кто изображен</label>
+            <input type="text"></li>
+        <li><label for="">номинал</label>
+            <input type="text"></li>
+        <li><label for="">вес</label>
+            <input type="text"></li>
+        <li><label for="">формат</label>
+            <input type="text"></li>
+        <li><label for="">Входит в объединение</label>
+            <input type="text"></li>
+        <li><label for="">какого цвета </label>
+            <input type="color"></li>
+        </ol>
+        </ol>
+        </ol>
+        </ol>
+        </ol>
+
+
+        <div class="">
+
+        </div>
+
+        <div class="">
+            <p>Дополнительно</p>
+            <input type="checkbox" id="scales" name="scales"
+                   checked>
+
+            <label for="scales">Сообщать о новинках</label>
+            <input type="checkbox" id="sub" name="sub"
+                   checked>
+            <label for="sub">Подписаться на рассылку</label>
+            <input type="checkbox" id="scales" name="scales"
+                   checked>
+
+            <label for="scales">Сохранить историю поиска</label>
+
+        </div>
+
+        <div>
+
+            <button onclick="document.location='search.html'" class="btn btn-info">Поиск</button>
+
+    </form>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</body>
+</html>
+</body>
+</html>
